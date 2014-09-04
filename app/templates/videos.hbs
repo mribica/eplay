@@ -1,0 +1,13 @@
+<ul>
+  {{#each}}
+    <li>
+      <a href="#" {{action "play" id}}> {{title}} </a> - 
+      {{#link-to "videos.edit" id}} Edit {{/link-to}} -
+      <a href="#" {{action "delete" id}}> Delete </a>
+    </li>
+  {{/each}}
+
+  {{#link-to "videos.new"}} + Add Video{{/link-to}}
+
+  {{outlet}}
+</ul>

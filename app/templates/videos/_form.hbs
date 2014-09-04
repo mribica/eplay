@@ -1,0 +1,9 @@
+<form {{action "save" on="submit"}}>
+  {{input type="text" value=title}}
+  {{input type="text" value=videoId}}
+
+  <div class="actions">
+    <button type="submit"> Save </button>
+    {{#link-to "videos"}} Cancel {{/link-to}}
+  </div>
+</form>
