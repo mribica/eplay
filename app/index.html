@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eplay</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/eplay.css">
+  </head>
+  <body>
+    <script>
+      window.EplayENV = {{ENV}};
+      window.EmberENV = window.EplayENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/eplay.js"></script>
+    <script>
+      window.Eplay = require('eplay/app')['default'].create(EplayENV.APP);
+    </script>
+  </body>
+</html>
