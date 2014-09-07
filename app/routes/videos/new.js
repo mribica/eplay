@@ -1,8 +1,8 @@
 import Ember from "ember";
 
-export default Em.Route.extend({
+export default Ember.Route.extend({
   model: function() {
-    return Em.Object.create({title: "", videoId: "M7lc1UVf-VE"});
+    return Ember.Object.create({title: "", videoId: "M7lc1UVf-VE"});
   },
 
   actions: {

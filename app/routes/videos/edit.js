@@ -1,6 +1,6 @@
 import Ember from "ember";
 
-export default Em.Route.extend({
+export default Ember.Route.extend({
   model: function(params) {
     var id = params.id;
     var selectedVideo = this.modelFor("videos")[id];
@@ -8,7 +8,8 @@ export default Em.Route.extend({
   },
 
   actions: {
-    submit: function() {
+    save: function() {
+      this.transitionTo("videos");
     }
   }
-})
+});

@@ -1,9 +1,11 @@
-<h2 id='title'>Welcome to Eplay</h2>
+<div class="container">
+  <div class="row">
+    <div class="content-wrapper col-sm-6">
+      {{outlet}}
+    </div>
 
-<div class="content-wrapper">
-  {{outlet}}
-</div>
-
-<div class="player-wrapper">
-  {{outlet "player"}}
+    <div class="player-wrapper col-sm-6">
+      {{outlet "player"}}
+    </div>
+  </div>
 </div>
